@@ -1,0 +1,314 @@
+/* ==================== */
+/* 기본 설정 */
+/* ==================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.page {
+    min-height: 100vh;
+}
+
+
+/* ==================== */
+/* 메인 화면 */
+/* ==================== */
+
+.main-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+
+/* ==================== */
+/* 메뉴 */
+/* ==================== */
+
+.menu {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+
+.menu h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.menu p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+/* ==================== */
+/* 메뉴 색상 */
+/* ==================== */
+
+.python-menu {
+    background-color: #d9f5c4;
+}
+
+.java-menu {
+    background-color: #ff9999;
+}
+
+.c-menu {
+    background-color: #aeb6e0;
+}
+
+.html-menu {
+    background-color: #fff5b8;
+}
+
+
+/* ==================== */
+/* 메뉴 버튼 */
+/* ==================== */
+
+.menu-button {
+    width: 70px;
+    height: 70px;
+    border: none;
+    background-color: #20b5c8;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu-button:hover {
+    transform: scale(1.1);
+}
+
+
+/* ==================== */
+/* 서브 페이지 */
+/* ==================== */
+
+.sub-page {
+    display: none;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 120px;
+    background-color: white;
+}
+
+
+/* ==================== */
+/* 내용 영역 */
+/* ==================== */
+
+.language-content {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.language-title {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 60px;
+}
+
+
+/* ==================== */
+/* 섹션 */
+/* ==================== */
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dddddd;
+}
+
+section p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* ==================== */
+/* 리스트 */
+/* ==================== */
+
+ul {
+    line-height: 2;
+    font-size: 17px;
+}
+
+
+/* ==================== */
+/* 태그 */
+/* ==================== */
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag-container span {
+    padding: 10px 15px;
+    background-color: #eeeeee;
+    border-radius: 20px;
+}
+
+
+/* ==================== */
+/* 코드 */
+/* ==================== */
+
+pre {
+    background-color: #eeeeee;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+code {
+    font-size: 16px;
+}
+
+.result {
+    font-size: 15px;
+    color: #555555;
+}
+
+
+/* ==================== */
+/* 퀴즈 */
+/* ==================== */
+
+.quiz {
+    margin-top: 70px;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+
+.quiz h2 {
+    border: none;
+    margin-top: 0;
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.quiz-option {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: white;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.quiz-option:hover {
+    background-color: #eeeeee;
+}
+
+.quiz-option.correct {
+    background-color: #c8f7c5;
+    border-color: #65b85f;
+}
+
+.quiz-option.wrong {
+    background-color: #ffd1d1;
+    border-color: #d95353;
+}
+
+.quiz-result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.quiz-explanation {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+
+/* ==================== */
+/* HOME 버튼 */
+/* ==================== */
+
+.home-button {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 55px;
+    border: none;
+    background-color: #bbbbbb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.home-button:hover {
+    transform: translateX(-50%) scale(1.1);
+}
+
+
+/* ==================== */
+/* 모바일 화면 */
+/* ==================== */
+
+@media screen and (max-width: 600px) {
+    .menu {
+        padding: 20px;
+        height: 130px;
+    }
+
+    .menu h1 {
+        font-size: 25px;
+    }
+
+    .menu p {
+        font-size: 13px;
+    }
+
+    .menu-button {
+        width: 55px;
+        height: 55px;
+    }
+
+    .language-title {
+        font-size: 35px;
+    }
+}

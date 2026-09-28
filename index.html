@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4대 개발 언어 가이드</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================== 메인 화면 ==================== -->
+    <div id="mainPage" class="page main-page">
+        <div class="main-container">
+
+            <div class="menu python-menu">
+                <div class="menu-text">
+                    <h1>Python</h1>
+                    <p>간결하고 배우기 쉬운 프로그래밍 언어</p>
+                </div>
+                <button class="menu-button" data-page="pythonPage">→</button>
+            </div>
+
+            <div class="menu java-menu">
+                <div class="menu-text">
+                    <h1>Java</h1>
+                    <p>객체지향 프로그래밍 언어</p>
+                </div>
+                <button class="menu-button" data-page="javaPage">→</button>
+            </div>
+
+            <div class="menu c-menu">
+                <div class="menu-text">
+                    <h1>C Language</h1>
+                    <p>프로그래밍 언어의 중요한 기초</p>
+                </div>
+                <button class="menu-button" data-page="cPage">→</button>
+            </div>
+
+            <div class="menu html-menu">
+                <div class="menu-text">
+                    <h1>HTML</h1>
+                    <p>웹 페이지의 구조를 만드는 마크업 언어</p>
+                </div>
+                <button class="menu-button" data-page="htmlPage">→</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ==================== Python 페이지 ==================== -->
+    <div id="pythonPage" class="page sub-page">
+        <div class="language-content">
+            <h1 class="language-title">Python</h1>
+
+            <section>
+                <h2>Python이란?</h2>
+                <p>
+                    Python은 문법이 간단하고 읽기 쉬워
+                    프로그래밍을 처음 배우는 사람에게도 인기 있는 언어입니다.
+                </p>
+            </section>
+
+            <section>
+                <h2>주요 특징</h2>
+                <ul>
+                    <li>문법이 간단하고 읽기 쉽다.</li>
+                    <li>프로그래밍 입문자가 배우기 좋다.</li>
+                    <li>다양한 라이브러리를 사용할 수 있다.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>사용 분야</h2>
+                <div class="tag-container">
+                    <span>인공지능</span>
+                    <span>데이터 분석</span>
+                    <span>웹 개발</span>
+                    <span>자동화</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>코드 예제</h2>
+                <pre><code>print("Hello World")</code></pre>
+                <p class="result">실행 결과: Hello World</p>
+            </section>
+
+            <section class="quiz">
+                <h2>Python 퀴즈</h2>
+                <p>다음 중 Python에서 화면에 문장을 출력하는 함수는 무엇일까요?</p>
+
+                <div class="quiz-options">
+                    <button class="quiz-option" data-answer="wrong">A. output()</button>
+                    <button class="quiz-option" data-answer="correct">B. print()</button>
+                    <button class="quiz-option" data-answer="wrong">C. display()</button>
+                    <button class="quiz-option" data-answer="wrong">D. write()</button>
+                </div>
+
+                <p class="quiz-result"></p>
+                <p class="quiz-explanation">
+                    해설: Python에서 화면에 문장을 출력할 때는 print() 함수를 사용합니다.
+                    예를 들어 print("Hello World")라고 작성하면 화면에 Hello World가 출력됩니다.
+                </p>
+            </section>
+        </div>
+
+        <button class="home-button">HOME</button>
+    </div>
+
+
+    <!-- ==================== Java 페이지 ==================== -->
+    <div id="javaPage" class="page sub-page">
+        <div class="language-content">
+            <h1 class="language-title">Java</h1>
+
+            <section>
+                <h2>Java란?</h2>
+                <p>
+                    Java는 객체지향 프로그래밍을 기반으로 하는
+                    대표적인 프로그래밍 언어입니다.
+                </p>
+            </section>
+
+            <section>
+                <h2>주요 특징</h2>
+                <ul>
+                    <li>객체지향 프로그래밍 언어이다.</li>
+                    <li>다양한 운영체제에서 사용할 수 있다.</li>
+                    <li>안정성과 확장성이 높다.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>사용 분야</h2>
+                <div class="tag-container">
+                    <span>웹 개발</span>
+                    <span>Android</span>
+                    <span>서버</span>
+                    <span>기업 시스템</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>코드 예제</h2>
+                <pre><code>System.out.println("Hello World");</code></pre>
+                <p class="result">실행 결과: Hello World</p>
+            </section>
+
+            <section class="quiz">
+                <h2>Java 퀴즈</h2>
+                <p>Java의 대표적인 프로그래밍 방식은 무엇일까요?</p>
+
+                <div class="quiz-options">
+                    <button class="quiz-option" data-answer="correct">A. 객체지향 프로그래밍</button>
+                    <button class="quiz-option" data-answer="wrong">B. 순수 함수형 프로그래밍</button>
+                    <button class="quiz-option" data-answer="wrong">C. 마크업 프로그래밍</button>
+                    <button class="quiz-option" data-answer="wrong">D. 스타일 프로그래밍</button>
+                </div>
+
+                <p class="quiz-result"></p>
+                <p class="quiz-explanation">
+                    해설: Java는 객체지향 프로그래밍을 중심으로 사용하는 언어입니다.
+                    클래스와 객체 등의 개념을 이용하여 프로그램을 구조적으로 작성할 수 있습니다.
+                </p>
+            </section>
+        </div>
+
+        <button class="home-button">HOME</button>
+    </div>
+
+
+    <!-- ==================== C 페이지 ==================== -->
+    <div id="cPage" class="page sub-page">
+        <div class="language-content">
+            <h1 class="language-title">C Language</h1>
+
+            <section>
+                <h2>C 언어란?</h2>
+                <p>
+                    C 언어는 컴퓨터 시스템과 소프트웨어 개발에
+                    널리 사용되는 대표적인 프로그래밍 언어입니다.
+                </p>
+            </section>
+
+            <section>
+                <h2>주요 특징</h2>
+                <ul>
+                    <li>실행 속도가 빠르다.</li>
+                    <li>하드웨어와 가까운 프로그래밍이 가능하다.</li>
+                    <li>다른 프로그래밍 언어를 배우는 기초가 된다.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>사용 분야</h2>
+                <div class="tag-container">
+                    <span>운영체제</span>
+                    <span>임베디드</span>
+                    <span>시스템</span>
+                    <span>소프트웨어</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>코드 예제</h2>
+                <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello World");
+    return 0;
+}</code></pre>
+                <p class="result">실행 결과: Hello World</p>
+            </section>
+
+            <section class="quiz">
+                <h2>C 언어 퀴즈</h2>
+                <p>
+                    다음 중 C 언어에서 화면에 문장을 출력할 때 사용하는 함수는 무엇일까요?
+                </p>
+
+                <div class="quiz-options">
+                    <button class="quiz-option" data-answer="wrong">A. print()</button>
+                    <button class="quiz-option" data-answer="correct">B. printf()</button>
+                    <button class="quiz-option" data-answer="wrong">C. output()</button>
+                    <button class="quiz-option" data-answer="wrong">D. console()</button>
+                </div>
+
+                <p class="quiz-result"></p>
+                <p class="quiz-explanation">
+                    해설: C 언어에서는 printf() 함수를 사용하여 화면에 문자열이나 값을 출력할 수 있습니다.
+                    예를 들어 printf("Hello World");를 실행하면 Hello World가 출력됩니다.
+                </p>
+            </section>
+        </div>
+
+        <button class="home-button">HOME</button>
+    </div>
+
+
+    <!-- ==================== HTML 페이지 ==================== -->
+    <div id="htmlPage" class="page sub-page">
+        <div class="language-content">
+            <h1 class="language-title">HTML</h1>
+
+            <section>
+                <h2>HTML이란?</h2>
+                <p>
+                    HTML은 웹 페이지의 구조와 내용을 만드는
+                    마크업 언어입니다.
+                </p>
+            </section>
+
+            <section>
+                <h2>주요 특징</h2>
+                <ul>
+                    <li>웹 페이지의 구조를 만든다.</li>
+                    <li>CSS와 함께 디자인을 구성한다.</li>
+                    <li>JavaScript와 함께 웹 기능을 구현한다.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>사용 분야</h2>
+                <div class="tag-container">
+                    <span>웹사이트</span>
+                    <span>웹 앱</span>
+                    <span>UI</span>
+                    <span>웹 콘텐츠</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>코드 예제</h2>
+                <pre><code>&lt;h1&gt;Hello World&lt;/h1&gt;</code></pre>
+                <p class="result">화면 결과: Hello World라는 제목이 표시됩니다.</p>
+            </section>
+
+            <section class="quiz">
+                <h2>HTML 퀴즈</h2>
+                <p>
+                    다음 중 HTML에서 가장 큰 제목을 나타내는 태그는 무엇일까요?
+                </p>
+
+                <div class="quiz-options">
+                    <button class="quiz-option" data-answer="wrong">A. &lt;h6&gt;</button>
+                    <button class="quiz-option" data-answer="wrong">B. &lt;head&gt;</button>
+                    <button class="quiz-option" data-answer="correct">C. &lt;h1&gt;</button>
+                    <button class="quiz-option" data-answer="wrong">D. &lt;title&gt;</button>
+                </div>
+
+                <p class="quiz-result"></p>
+                <p class="quiz-explanation">
+                    해설: HTML의 h1 태그는 제목 태그 중 가장 높은 단계의 제목을 나타냅니다.
+                    h1부터 h6까지 있으며 숫자가 작을수록 제목의 단계가 높습니다.
+                </p>
+            </section>
+        </div>
+
+        <button class="home-button">HOME</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
